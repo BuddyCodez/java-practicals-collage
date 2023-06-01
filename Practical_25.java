@@ -5,14 +5,14 @@
     public void run() {
       try {
          for (int i = 0; i < 10; i++) {
-             String tname = Thread.currentThread().getName();
-             System.out.println("Thread name: " + tname);
-             sleep(tname == "Thread 1" ? 1000 : 2000);
+             String name = Thread.currentThread().getName();
+             System.out.println("Thread name: " + name);
+             sleep(name == "Thread 1" ? 1000 : 2000);
          }
       } catch (Exception e) {
           // TODO: handle exception
         System.out.println("Exception: " + e);
-      } 
+      }
     }
 
 }
